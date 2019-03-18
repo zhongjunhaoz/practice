@@ -1,0 +1,22 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>应用Object创建对象</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+</head>
+
+<body>
+<script type="text/javascript">
+var book = new Object();		//创建一个空对象
+//定义对象的方法
+book.getBookInfo = getBookInfo;
+function getBookInfo(name,type,price){
+	document.write("书名："+name+"<br>类型："+type+"<br>价格："+price);
+}
+//调用对象的方法
+book.getBookInfo("JavaScript入门经典","JavaScript","80");
+</script>
+</body>
+</html>

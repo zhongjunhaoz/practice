@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>盒子内的文本相对定位，绝对定位小技巧</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .a1{
+            background-color:green;
+            width: 500px;
+            height: 200px;
+            position: relative;/*第二步：在父级组件添加position: relative,就可以使它移到盒子左下角了*/
+        }
+
+        .a1 .a2{/*第一步：绝对定位，“东华理工大学移到网页左下角”*/
+            position:absolute;
+            left: 5px;
+            bottom: 5px;
+        }
+        </style>
+</head>
+<body>
+ <div class="a1"><!--使“东华理工大学”从左上角移到左下角-->
+    <header class="a2">
+        东华理工大学
+        </header>
+    </div>
+</body>
+</html>

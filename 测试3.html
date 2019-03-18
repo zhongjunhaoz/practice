@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>网页导航菜单栏</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       body{
+           font-size: 16px;
+           padding: 50px;
+
+       } 
+       li{
+           float: left;
+          list-style: none;
+       }
+       a{/*使整个块级元素变成当鼠标放上去的时候会变成手的形状*/
+            display: inline-block;/*使行宽设置有效*/
+            text-decoration: none;
+           color:#333; 
+           background-color: #ccc;
+           width: 100px;
+           height: 30px;
+            text-align: center;/*使文字水平居中*/
+            line-height: 30px;/*使文字垂直居中,让文本行高设置成盒子的高度*/
+            /* border-left: 2px solid #fff; */
+            margin-right: 2px;
+       }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">文章</a></li>
+        <li><a href="#">参考</a></li>
+        <li><a href="#">博客</a></li>
+        <li><a href="#">论坛</a></li>
+        <li><a href="#">联系</a></li>
+    </ul>
+<!-- 块级元素独占一行，又没有左右移动，所以会紧贴墙壁-->
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>一般静态网页布局：头侧内容尾</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .a1{
+            background-color:blue;
+            height:50px;
+        }
+        .a2{
+            float: left;/*侧边栏用float: left;可以浮动到左边*/
+            background-color: brown;
+            width: 25%;
+            height: 500px;
+        }
+        .a3{
+            float: left;/*内容栏也要用float:left;*/
+            background-color: burlywood;
+            width: 75%;
+            height: 500px;
+        }
+        .a4{
+            background-color: black;
+            clear: both;
+        }
+        </style>
+</head>
+<body>
+    <div class="a1"><h1>标题</h1></div>
+    <div class="a2">侧边栏</div>
+    <div class="a3">内容</div>
+    <div class="a4">尾</div>
+</body>
+</html>
